@@ -1,7 +1,4 @@
-'.source.perl':
-  '#!/usr/bin/env perl':
-    'prefix': 'pl'
-    'body': '#!/usr/bin/env perl\n'
+'.source.pg':
   'If.…else':
     'prefix': 'ife'
     'body': 'if ($1) {\n\t${2:# body...}\n} else {\n\t${3:# else...}\n}\n'
