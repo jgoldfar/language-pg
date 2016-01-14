@@ -12,9 +12,9 @@
     'begin': '^='
     'captures':
       '0':
-        'name': 'punctuation.definition.comment.perl'
+        'name': 'punctuation.definition.comment.pg'
     'end': '^=cut'
-    'name': 'comment.block.documentation.perl'
+    'name': 'comment.block.documentation.pg'
   }
   {
     'include': '#variable'
@@ -22,25 +22,25 @@
   {
     'applyEndPatternLast': 1
     'begin': '\\b(?=qr\\s*[^\\s\\w])'
-    'comment': 'string.regexp.compile.perl'
+    'comment': 'string.regexp.compile.pg'
     'end': '((([egimosxradlupc]*)))(?=(\\s+\\S|\\s*[;\\,\\#\\{\\}\\)]|$))'
     'endCaptures':
       '1':
-        'name': 'string.regexp.compile.perl'
+        'name': 'string.regexp.compile.pg'
       '2':
-        'name': 'punctuation.definition.string.perl'
+        'name': 'punctuation.definition.string.pg'
       '3':
-        'name': 'keyword.control.regexp-option.perl'
+        'name': 'keyword.control.regexp-option.pg'
     'patterns': [
       {
         'begin': '(qr)\\s*\\{'
         'captures':
           '0':
-            'name': 'punctuation.definition.string.perl'
+            'name': 'punctuation.definition.string.pg'
           '1':
-            'name': 'support.function.perl'
+            'name': 'support.function.pg'
         'end': '\\}'
-        'name': 'string.regexp.compile.nested_braces.perl'
+        'name': 'string.regexp.compile.nested_braces.pg'
         'patterns': [
           {
             'include': '#escaped_char'
@@ -57,11 +57,11 @@
         'begin': '(qr)\\s*\\['
         'captures':
           '0':
-            'name': 'punctuation.definition.string.perl'
+            'name': 'punctuation.definition.string.pg'
           '1':
-            'name': 'support.function.perl'
+            'name': 'support.function.pg'
         'end': '\\]'
-        'name': 'string.regexp.compile.nested_brackets.perl'
+        'name': 'string.regexp.compile.nested_brackets.pg'
         'patterns': [
           {
             'include': '#escaped_char'
@@ -78,11 +78,11 @@
         'begin': '(qr)\\s*<'
         'captures':
           '0':
-            'name': 'punctuation.definition.string.perl'
+            'name': 'punctuation.definition.string.pg'
           '1':
-            'name': 'support.function.perl'
+            'name': 'support.function.pg'
         'end': '>'
-        'name': 'string.regexp.compile.nested_ltgt.perl'
+        'name': 'string.regexp.compile.nested_ltgt.pg'
         'patterns': [
           {
             'include': '#escaped_char'
@@ -99,11 +99,11 @@
         'begin': '(qr)\\s*\\('
         'captures':
           '0':
-            'name': 'punctuation.definition.string.perl'
+            'name': 'punctuation.definition.string.pg'
           '1':
-            'name': 'support.function.perl'
+            'name': 'support.function.pg'
         'end': '\\)'
-        'name': 'string.regexp.compile.nested_parens.perl'
+        'name': 'string.regexp.compile.nested_parens.pg'
         'patterns': [
           {
             'comment': 'This is to prevent thinks like qr/foo$/ to treat $/ as a variable'
@@ -124,11 +124,11 @@
         'begin': '(qr)\\s*\\\''
         'captures':
           '0':
-            'name': 'punctuation.definition.string.perl'
+            'name': 'punctuation.definition.string.pg'
           '1':
-            'name': 'support.function.perl'
+            'name': 'support.function.pg'
         'end': '\\\''
-        'name': 'string.regexp.compile.single-quote.perl'
+        'name': 'string.regexp.compile.single-quote.pg'
         'patterns': [
           {
             'include': '#escaped_char'
@@ -139,16 +139,16 @@
         'begin': '(qr)\\s*([^\\s\\w\\\'\\{\\[\\(\\<])'
         'captures':
           '0':
-            'name': 'punctuation.definition.string.perl'
+            'name': 'punctuation.definition.string.pg'
           '1':
-            'name': 'support.function.perl'
+            'name': 'support.function.pg'
         'end': '\\2'
-        'name': 'string.regexp.compile.simple-delimiter.perl'
+        'name': 'string.regexp.compile.simple-delimiter.pg'
         'patterns': [
           {
             'comment': 'This is to prevent thinks like qr/foo$/ to treat $/ as a variable'
             'match': '\\$(?=[^\\s\\w\\\'\\{\\[\\(\\<])'
-            'name': 'keyword.control.anchor.perl'
+            'name': 'keyword.control.anchor.pg'
           }
           {
             'include': '#escaped_char'
@@ -166,25 +166,25 @@
   {
     'applyEndPatternLast': 1
     'begin': '(?<!\\{|\\+|\\-)\\b(?=m\\s*[^\\sa-zA-Z0-9])'
-    'comment': 'string.regexp.find-m.perl'
+    'comment': 'string.regexp.find-m.pg'
     'end': '((([egimosxradlupc]*)))(?=(\\s+\\S|\\s*[;\\,\\#\\{\\}\\)]|$))'
     'endCaptures':
       '1':
-        'name': 'string.regexp.find-m.perl'
+        'name': 'string.regexp.find-m.pg'
       '2':
-        'name': 'punctuation.definition.string.perl'
+        'name': 'punctuation.definition.string.pg'
       '3':
-        'name': 'keyword.control.regexp-option.perl'
+        'name': 'keyword.control.regexp-option.pg'
     'patterns': [
       {
         'begin': '(m)\\s*\\{'
         'captures':
           '0':
-            'name': 'punctuation.definition.string.perl'
+            'name': 'punctuation.definition.string.pg'
           '1':
-            'name': 'support.function.perl'
+            'name': 'support.function.pg'
         'end': '\\}'
-        'name': 'string.regexp.find-m.nested_braces.perl'
+        'name': 'string.regexp.find-m.nested_braces.pg'
         'patterns': [
           {
             'include': '#escaped_char'
@@ -201,11 +201,11 @@
         'begin': '(m)\\s*\\['
         'captures':
           '0':
-            'name': 'punctuation.definition.string.perl'
+            'name': 'punctuation.definition.string.pg'
           '1':
-            'name': 'support.function.perl'
+            'name': 'support.function.pg'
         'end': '\\]'
-        'name': 'string.regexp.find-m.nested_brackets.perl'
+        'name': 'string.regexp.find-m.nested_brackets.pg'
         'patterns': [
           {
             'include': '#escaped_char'
@@ -222,11 +222,11 @@
         'begin': '(m)\\s*<'
         'captures':
           '0':
-            'name': 'punctuation.definition.string.perl'
+            'name': 'punctuation.definition.string.pg'
           '1':
-            'name': 'support.function.perl'
+            'name': 'support.function.pg'
         'end': '>'
-        'name': 'string.regexp.find-m.nested_ltgt.perl'
+        'name': 'string.regexp.find-m.nested_ltgt.pg'
         'patterns': [
           {
             'include': '#escaped_char'
@@ -243,11 +243,11 @@
         'begin': '(m)\\s*\\('
         'captures':
           '0':
-            'name': 'punctuation.definition.string.perl'
+            'name': 'punctuation.definition.string.pg'
           '1':
-            'name': 'support.function.perl'
+            'name': 'support.function.pg'
         'end': '\\)'
-        'name': 'string.regexp.find-m.nested_parens.perl'
+        'name': 'string.regexp.find-m.nested_parens.pg'
         'patterns': [
           {
             'include': '#escaped_char'
@@ -264,11 +264,11 @@
         'begin': '(m)\\s*\\\''
         'captures':
           '0':
-            'name': 'punctuation.definition.string.perl'
+            'name': 'punctuation.definition.string.pg'
           '1':
-            'name': 'support.function.perl'
+            'name': 'support.function.pg'
         'end': '\\\''
-        'name': 'string.regexp.find-m.single-quote.perl'
+        'name': 'string.regexp.find-m.single-quote.pg'
         'patterns': [
           {
             'include': '#escaped_char'
@@ -279,16 +279,16 @@
         'begin': '(?<!\\{|\\+|\\-)(m)\\s*([^\\sa-zA-Z0-9\\\'\\{\\[\\(\\<])'
         'captures':
           '0':
-            'name': 'punctuation.definition.string.perl'
+            'name': 'punctuation.definition.string.pg'
           '1':
-            'name': 'support.function.perl'
+            'name': 'support.function.pg'
         'end': '\\2'
-        'name': 'string.regexp.find-m.simple-delimiter.perl'
+        'name': 'string.regexp.find-m.simple-delimiter.pg'
         'patterns': [
           {
             'comment': 'This is to prevent thinks like qr/foo$/ to treat $/ as a variable'
             'match': '\\$(?=[^\\sa-zA-Z0-9\\\'\\{\\[\\(\\<])'
-            'name': 'keyword.control.anchor.perl'
+            'name': 'keyword.control.anchor.pg'
           }
           {
             'include': '#escaped_char'
@@ -303,7 +303,7 @@
               {
                 'comment': 'This is to prevent thinks like qr/foo$/ to treat $/ as a variable'
                 'match': '\\$(?=[^\\s\\w\\\'\\{\\[\\(\\<])'
-                'name': 'keyword.control.anchor.perl'
+                'name': 'keyword.control.anchor.pg'
               }
               {
                 'include': '#escaped_char'
@@ -320,25 +320,25 @@
   {
     'applyEndPatternLast': 1
     'begin': '\\b(?=(?<!\\&)(s)(\\s+\\S|\\s*[;\\,\\#\\{\\}\\(\\)\\[<]|$))'
-    'comment': 'string.regexp.replace.perl'
+    'comment': 'string.regexp.replace.pg'
     'end': '((([egimosxradlupc]*)))(?=(\\s+\\S|\\s*[;\\,\\#\\}\\)\\]>]|$))'
     'endCaptures':
       '1':
-        'name': 'string.regexp.replace.perl'
+        'name': 'string.regexp.replace.pg'
       '2':
-        'name': 'punctuation.definition.string.perl'
+        'name': 'punctuation.definition.string.pg'
       '3':
-        'name': 'keyword.control.regexp-option.perl'
+        'name': 'keyword.control.regexp-option.pg'
     'patterns': [
       {
         'begin': '(s)\\s*\\{'
         'captures':
           '0':
-            'name': 'punctuation.definition.string.perl'
+            'name': 'punctuation.definition.string.pg'
           '1':
-            'name': 'support.function.perl'
+            'name': 'support.function.pg'
         'end': '\\}'
-        'name': 'string.regexp.nested_braces.perl'
+        'name': 'string.regexp.nested_braces.pg'
         'patterns': [
           {
             'include': '#escaped_char'
@@ -352,11 +352,11 @@
         'begin': '(s)\\s*\\['
         'captures':
           '0':
-            'name': 'punctuation.definition.string.perl'
+            'name': 'punctuation.definition.string.pg'
           '1':
-            'name': 'support.function.perl'
+            'name': 'support.function.pg'
         'end': '\\]'
-        'name': 'string.regexp.nested_brackets.perl'
+        'name': 'string.regexp.nested_brackets.pg'
         'patterns': [
           {
             'include': '#escaped_char'
@@ -370,11 +370,11 @@
         'begin': '(s)\\s*<'
         'captures':
           '0':
-            'name': 'punctuation.definition.string.perl'
+            'name': 'punctuation.definition.string.pg'
           '1':
-            'name': 'support.function.perl'
+            'name': 'support.function.pg'
         'end': '>'
-        'name': 'string.regexp.nested_ltgt.perl'
+        'name': 'string.regexp.nested_ltgt.pg'
         'patterns': [
           {
             'include': '#escaped_char'
@@ -388,11 +388,11 @@
         'begin': '(s)\\s*\\('
         'captures':
           '0':
-            'name': 'punctuation.definition.string.perl'
+            'name': 'punctuation.definition.string.pg'
           '1':
-            'name': 'support.function.perl'
+            'name': 'support.function.pg'
         'end': '\\)'
-        'name': 'string.regexp.nested_parens.perl'
+        'name': 'string.regexp.nested_parens.pg'
         'patterns': [
           {
             'include': '#escaped_char'
@@ -406,9 +406,9 @@
         'begin': '\\{'
         'captures':
           '0':
-            'name': 'punctuation.definition.string.perl'
+            'name': 'punctuation.definition.string.pg'
         'end': '\\}'
-        'name': 'string.regexp.format.nested_braces.perl'
+        'name': 'string.regexp.format.nested_braces.pg'
         'patterns': [
           {
             'include': '#escaped_char'
@@ -425,9 +425,9 @@
         'begin': '\\['
         'captures':
           '0':
-            'name': 'punctuation.definition.string.perl'
+            'name': 'punctuation.definition.string.pg'
         'end': '\\]'
-        'name': 'string.regexp.format.nested_brackets.perl'
+        'name': 'string.regexp.format.nested_brackets.pg'
         'patterns': [
           {
             'include': '#escaped_char'
@@ -444,9 +444,9 @@
         'begin': '<'
         'captures':
           '0':
-            'name': 'punctuation.definition.string.perl'
+            'name': 'punctuation.definition.string.pg'
         'end': '>'
-        'name': 'string.regexp.format.nested_ltgt.perl'
+        'name': 'string.regexp.format.nested_ltgt.pg'
         'patterns': [
           {
             'include': '#escaped_char'
@@ -463,9 +463,9 @@
         'begin': '\\('
         'captures':
           '0':
-            'name': 'punctuation.definition.string.perl'
+            'name': 'punctuation.definition.string.pg'
         'end': '\\)'
-        'name': 'string.regexp.format.nested_parens.perl'
+        'name': 'string.regexp.format.nested_parens.pg'
         'patterns': [
           {
             'include': '#escaped_char'
@@ -482,13 +482,13 @@
         'begin': '\''
         'captures':
           '0':
-            'name': 'punctuation.definition.string.perl'
+            'name': 'punctuation.definition.string.pg'
         'end': '\''
-        'name': 'string.regexp.format.single_quote.perl'
+        'name': 'string.regexp.format.single_quote.pg'
         'patterns': [
           {
             'match': '\\\\[\'\\\\]'
-            'name': 'constant.character.escape.perl'
+            'name': 'constant.character.escape.pg'
           }
         ]
       }
@@ -496,9 +496,9 @@
         'begin': '([^\\s\\w\\[({<;])'
         'captures':
           '0':
-            'name': 'punctuation.definition.string.perl'
+            'name': 'punctuation.definition.string.pg'
         'end': '\\1'
-        'name': 'string.regexp.format.simple_delimiter.perl'
+        'name': 'string.regexp.format.simple_delimiter.pg'
         'patterns': [
           {
             'include': '#escaped_char'
@@ -519,21 +519,21 @@
     'end': '((([egimosxradlupc]*)))(?=([\\}\\)\\;\\,]|\\s+|$))'
     'endCaptures':
       '1':
-        'name': 'string.regexp.replace.perl'
+        'name': 'string.regexp.replace.pg'
       '2':
-        'name': 'punctuation.definition.string.perl'
+        'name': 'punctuation.definition.string.pg'
       '3':
-        'name': 'keyword.control.regexp-option.perl'
+        'name': 'keyword.control.regexp-option.pg'
     'patterns': [
       {
         'begin': '(s\\s*)([^\\sa-zA-Z0-9\\[({<])'
         'captures':
           '0':
-            'name': 'punctuation.definition.string.perl'
+            'name': 'punctuation.definition.string.pg'
           '1':
-            'name': 'support.function.perl'
+            'name': 'support.function.pg'
         'end': '(?=\\2)'
-        'name': 'string.regexp.replaceXXX.simple_delimiter.perl'
+        'name': 'string.regexp.replaceXXX.simple_delimiter.pg'
         'patterns': [
           {
             'include': '#escaped_char'
@@ -544,13 +544,13 @@
         'begin': '\''
         'captures':
           '0':
-            'name': 'punctuation.definition.string.perl'
+            'name': 'punctuation.definition.string.pg'
         'end': '\''
-        'name': 'string.regexp.replaceXXX.format.single_quote.perl'
+        'name': 'string.regexp.replaceXXX.format.single_quote.pg'
         'patterns': [
           {
             'match': '\\\\[\'\\\\]'
-            'name': 'constant.character.escape.perl.perl'
+            'name': 'constant.character.escape.pg.pg'
           }
         ]
       }
@@ -558,9 +558,9 @@
         'begin': '([^\\sa-zA-Z0-9\\[({<])'
         'captures':
           '0':
-            'name': 'punctuation.definition.string.perl'
+            'name': 'punctuation.definition.string.pg'
         'end': '\\1'
-        'name': 'string.regexp.replaceXXX.format.simple_delimiter.perl'
+        'name': 'string.regexp.replaceXXX.format.simple_delimiter.pg'
         'patterns': [
           {
             'include': '#escaped_char'
@@ -578,21 +578,21 @@
     'end': '((([egimosradlupc]*x[egimosradlupc]*)))\\b'
     'endCaptures':
       '1':
-        'name': 'string.regexp.replace.perl'
+        'name': 'string.regexp.replace.pg'
       '2':
-        'name': 'punctuation.definition.string.perl'
+        'name': 'punctuation.definition.string.pg'
       '3':
-        'name': 'keyword.control.regexp-option.perl'
+        'name': 'keyword.control.regexp-option.pg'
     'patterns': [
       {
         'begin': '(s)\\s*(.)'
         'captures':
           '0':
-            'name': 'punctuation.definition.string.perl'
+            'name': 'punctuation.definition.string.pg'
           '1':
-            'name': 'support.function.perl'
+            'name': 'support.function.pg'
         'end': '(?=\\2)'
-        'name': 'string.regexp.replace.extended.simple_delimiter.perl'
+        'name': 'string.regexp.replace.extended.simple_delimiter.pg'
         'patterns': [
           {
             'include': '#escaped_char'
@@ -603,9 +603,9 @@
         'begin': '\''
         'captures':
           '0':
-            'name': 'punctuation.definition.string.perl'
+            'name': 'punctuation.definition.string.pg'
         'end': '\'(?=[egimosradlupc]*x[egimosradlupc]*)\\b'
-        'name': 'string.regexp.replace.extended.simple_delimiter.perl'
+        'name': 'string.regexp.replace.extended.simple_delimiter.pg'
         'patterns': [
           {
             'include': '#escaped_char'
@@ -616,9 +616,9 @@
         'begin': '(.)'
         'captures':
           '0':
-            'name': 'punctuation.definition.string.perl'
+            'name': 'punctuation.definition.string.pg'
         'end': '\\1(?=[egimosradlupc]*x[egimosradlupc]*)\\b'
-        'name': 'string.regexp.replace.extended.simple_delimiter.perl'
+        'name': 'string.regexp.replace.extended.simple_delimiter.pg'
         'patterns': [
           {
             'include': '#escaped_char'
@@ -634,23 +634,23 @@
     'begin': '(?<=\\(|\\{|~|&|\\||if|unless|^)\\s*((\\/))'
     'beginCaptures':
       '1':
-        'name': 'string.regexp.find.perl'
+        'name': 'string.regexp.find.pg'
       '2':
-        'name': 'punctuation.definition.string.perl'
+        'name': 'punctuation.definition.string.pg'
     'end': '((\\1([egimosxradlupc]*)))(?=(\\s+\\S|\\s*[;\\,\\#\\{\\}\\)]|$))'
     'endCaptures':
       '1':
-        'name': 'string.regexp.find.perl'
+        'name': 'string.regexp.find.pg'
       '2':
-        'name': 'punctuation.definition.string.perl'
+        'name': 'punctuation.definition.string.pg'
       '3':
-        'name': 'keyword.control.regexp-option.perl'
-    'contentName': 'string.regexp.find.perl'
+        'name': 'keyword.control.regexp-option.pg'
+    'contentName': 'string.regexp.find.pg'
     'patterns': [
       {
         'comment': 'This is to prevent thinks like /foo$/ to treat $/ as a variable'
         'match': '\\$(?=\\/)'
-        'name': 'keyword.control.anchor.perl'
+        'name': 'keyword.control.anchor.pg'
       }
       {
         'include': '#escaped_char'
@@ -663,43 +663,43 @@
   {
     'captures':
       '1':
-        'name': 'constant.other.key.perl'
+        'name': 'constant.other.key.pg'
     'match': '\\b(\\w+)\\s*(?==>)'
   }
   {
     'match': '(?<={)\\s*\\w+\\s*(?=})'
-    'name': 'constant.other.bareword.perl'
+    'name': 'constant.other.bareword.pg'
   }
   {
     'captures':
       '1':
-        'name': 'keyword.control.perl'
+        'name': 'keyword.control.pg'
       '2':
-        'name': 'entity.name.type.class.perl'
+        'name': 'entity.name.type.class.pg'
     'match': '^\\s*(package)\\s+([^\\s;]+)'
-    'name': 'meta.class.perl'
+    'name': 'meta.class.pg'
   }
   {
     'captures':
       '1':
-        'name': 'storage.type.sub.perl'
+        'name': 'storage.type.sub.pg'
       '2':
-        'name': 'entity.name.function.perl'
+        'name': 'entity.name.function.pg'
       '3':
-        'name': 'storage.type.method.perl'
+        'name': 'storage.type.method.pg'
     'match': '\\b(sub)(?:\\s+([-a-zA-Z0-9_]+))?\\s*(?:\\([\\$\\@\\*;]*\\))?[^\\w\\{]'
-    'name': 'meta.function.perl'
+    'name': 'meta.function.pg'
   }
   {
     'captures':
       '1':
-        'name': 'entity.name.function.perl'
+        'name': 'entity.name.function.pg'
       '2':
-        'name': 'punctuation.definition.parameters.perl'
+        'name': 'punctuation.definition.parameters.pg'
       '3':
-        'name': 'variable.parameter.function.perl'
+        'name': 'variable.parameter.function.pg'
     'match': '^\\s*(BEGIN|UNITCHECK|CHECK|INIT|END|DESTROY)\\b'
-    'name': 'meta.function.perl'
+    'name': 'meta.function.pg'
   }
   {
     'begin': '^(?=(\\t| {4}))'
@@ -719,63 +719,63 @@
   {
     'captures':
       '1':
-        'name': 'support.function.perl'
+        'name': 'support.function.pg'
       '2':
-        'name': 'punctuation.definition.string.perl'
+        'name': 'punctuation.definition.string.pg'
       '5':
-        'name': 'punctuation.definition.string.perl'
+        'name': 'punctuation.definition.string.pg'
       '8':
-        'name': 'punctuation.definition.string.perl'
+        'name': 'punctuation.definition.string.pg'
     'match': '\\b(tr|y)\\s*([^A-Za-z0-9\\s])(.*?)(?<!\\\\)(\\\\{2})*(\\2)(.*?)(?<!\\\\)(\\\\{2})*(\\2)'
-    'name': 'string.regexp.replace.perl'
+    'name': 'string.regexp.replace.pg'
   }
   {
     'match': '\\b(__FILE__|__LINE__|__PACKAGE__|__SUB__)\\b'
-    'name': 'constant.language.perl'
+    'name': 'constant.language.pg'
   }
   {
     'begin': '\\b(__DATA__|__END__)\\n?'
     'captures':
       '1':
-        'name': 'constant.language.perl'
-    'contentName': 'text.embedded.perl'
+        'name': 'constant.language.pg'
+    'contentName': 'text.embedded.pg'
   }
   {
     'match': '(?<!->)\\b(continue|die|do|else|elsif|exit|for|foreach|goto|if|last|next|redo|return|select|unless|until|wait|while|switch|case|require|use|eval)\\b'
-    'name': 'keyword.control.perl'
+    'name': 'keyword.control.pg'
   }
   {
     'match': '\\b(my|our|local)\\b'
-    'name': 'storage.modifier.perl'
+    'name': 'storage.modifier.pg'
   }
   {
     'match': '(?<!\\w)\\-[rwx0RWXOezsfdlpSbctugkTBMAC]\\b'
-    'name': 'keyword.operator.filetest.perl'
+    'name': 'keyword.operator.filetest.pg'
   }
   {
     'match': '\\b(and|or|xor|as|not)\\b'
-    'name': 'keyword.operator.logical.perl'
+    'name': 'keyword.operator.logical.pg'
   }
   {
     'match': '(<=>|=>|->)'
-    'name': 'keyword.operator.comparison.perl'
+    'name': 'keyword.operator.comparison.pg'
   }
   {
     'begin': '(((<<) *"HTML"))(.*)\\n?'
     'captures':
       '1':
-        'name': 'punctuation.definition.string.perl'
+        'name': 'punctuation.definition.string.pg'
       '2':
-        'name': 'string.unquoted.heredoc.doublequote.perl'
+        'name': 'string.unquoted.heredoc.doublequote.pg'
       '3':
-        'name': 'punctuation.definition.heredoc.perl'
+        'name': 'punctuation.definition.heredoc.pg'
       '4':
         'patterns': [
           {
             'include': '$self'
           }
         ]
-    'contentName': 'text.html.embedded.perl'
+    'contentName': 'text.html.embedded.pg'
     'end': '(^HTML$)'
     'patterns': [
       {
@@ -793,18 +793,18 @@
     'begin': '(((<<) *"XML"))(.*)\\n?'
     'captures':
       '1':
-        'name': 'punctuation.definition.string.perl'
+        'name': 'punctuation.definition.string.pg'
       '2':
-        'name': 'string.unquoted.heredoc.doublequote.perl'
+        'name': 'string.unquoted.heredoc.doublequote.pg'
       '3':
-        'name': 'punctuation.definition.heredoc.perl'
+        'name': 'punctuation.definition.heredoc.pg'
       '4':
         'patterns': [
           {
             'include': '$self'
           }
         ]
-    'contentName': 'text.xml.embedded.perl'
+    'contentName': 'text.xml.embedded.pg'
     'end': '(^XML$)'
     'patterns': [
       {
@@ -822,18 +822,18 @@
     'begin': '(((<<) *"CSS"))(.*)\\n?'
     'captures':
       '1':
-        'name': 'punctuation.definition.string.perl'
+        'name': 'punctuation.definition.string.pg'
       '2':
-        'name': 'string.unquoted.heredoc.doublequote.perl'
+        'name': 'string.unquoted.heredoc.doublequote.pg'
       '3':
-        'name': 'punctuation.definition.heredoc.perl'
+        'name': 'punctuation.definition.heredoc.pg'
       '4':
         'patterns': [
           {
             'include': '$self'
           }
         ]
-    'contentName': 'text.css.embedded.perl'
+    'contentName': 'text.css.embedded.pg'
     'end': '(^CSS$)'
     'patterns': [
       {
@@ -851,18 +851,18 @@
     'begin': '(((<<) *"JAVASCRIPT"))(.*)\\n?'
     'captures':
       '1':
-        'name': 'punctuation.definition.string.perl'
+        'name': 'punctuation.definition.string.pg'
       '2':
-        'name': 'string.unquoted.heredoc.doublequote.perl'
+        'name': 'string.unquoted.heredoc.doublequote.pg'
       '3':
-        'name': 'punctuation.definition.heredoc.perl'
+        'name': 'punctuation.definition.heredoc.pg'
       '4':
         'patterns': [
           {
             'include': '$self'
           }
         ]
-    'contentName': 'source.js.embedded.perl'
+    'contentName': 'source.js.embedded.pg'
     'end': '(^JAVASCRIPT$)'
     'patterns': [
       {
@@ -880,18 +880,18 @@
     'begin': '(((<<) *"SQL"))(.*)\\n?'
     'captures':
       '1':
-        'name': 'punctuation.definition.string.perl'
+        'name': 'punctuation.definition.string.pg'
       '2':
-        'name': 'string.unquoted.heredoc.doublequote.perl'
+        'name': 'string.unquoted.heredoc.doublequote.pg'
       '3':
-        'name': 'punctuation.definition.heredoc.perl'
+        'name': 'punctuation.definition.heredoc.pg'
       '4':
         'patterns': [
           {
             'include': '$self'
           }
         ]
-    'contentName': 'source.sql.embedded.perl'
+    'contentName': 'source.sql.embedded.pg'
     'end': '(^SQL$)'
     'patterns': [
       {
@@ -909,18 +909,18 @@
     'begin': '(((<<) *"POSTSCRIPT"))(.*)\\n?'
     'captures':
       '1':
-        'name': 'punctuation.definition.string.perl'
+        'name': 'punctuation.definition.string.pg'
       '2':
-        'name': 'string.unquoted.heredoc.doublequote.perl'
+        'name': 'string.unquoted.heredoc.doublequote.pg'
       '3':
-        'name': 'punctuation.definition.heredoc.perl'
+        'name': 'punctuation.definition.heredoc.pg'
       '4':
         'patterns': [
           {
             'include': '$self'
           }
         ]
-    'contentName': 'text.postscript.embedded.perl'
+    'contentName': 'text.postscript.embedded.pg'
     'end': '(^POSTSCRIPT$)'
     'patterns': [
       {
@@ -938,18 +938,18 @@
     'begin': '(((<<) *"([^"]*)"))(.*)\\n?'
     'captures':
       '1':
-        'name': 'punctuation.definition.string.perl'
+        'name': 'punctuation.definition.string.pg'
       '2':
-        'name': 'string.unquoted.heredoc.doublequote.perl'
+        'name': 'string.unquoted.heredoc.doublequote.pg'
       '3':
-        'name': 'punctuation.definition.heredoc.perl'
+        'name': 'punctuation.definition.heredoc.pg'
       '5':
         'patterns': [
           {
             'include': '$self'
           }
         ]
-    'contentName': 'string.unquoted.heredoc.doublequote.perl'
+    'contentName': 'string.unquoted.heredoc.doublequote.pg'
     'end': '(^\\4$)'
     'patterns': [
       {
@@ -964,18 +964,18 @@
     'begin': '(((<<) *\'HTML\'))(.*)\\n?'
     'captures':
       '1':
-        'name': 'punctuation.definition.string.perl'
+        'name': 'punctuation.definition.string.pg'
       '2':
-        'name': 'string.unquoted.heredoc.quote.perl'
+        'name': 'string.unquoted.heredoc.quote.pg'
       '3':
-        'name': 'punctuation.definition.heredoc.perl'
+        'name': 'punctuation.definition.heredoc.pg'
       '4':
         'patterns': [
           {
             'include': '$self'
           }
         ]
-    'contentName': 'text.html.embedded.perl'
+    'contentName': 'text.html.embedded.pg'
     'end': '(^HTML$)'
     'patterns': [
       {
@@ -987,18 +987,18 @@
     'begin': '(((<<) *\'XML\'))(.*)\\n?'
     'captures':
       '1':
-        'name': 'punctuation.definition.string.perl'
+        'name': 'punctuation.definition.string.pg'
       '2':
-        'name': 'string.unquoted.heredoc.quote.perl'
+        'name': 'string.unquoted.heredoc.quote.pg'
       '3':
-        'name': 'punctuation.definition.heredoc.perl'
+        'name': 'punctuation.definition.heredoc.pg'
       '4':
         'patterns': [
           {
             'include': '$self'
           }
         ]
-    'contentName': 'text.xml.embedded.perl'
+    'contentName': 'text.xml.embedded.pg'
     'end': '(^XML$)'
     'patterns': [
       {
@@ -1010,18 +1010,18 @@
     'begin': '(((<<) *\'CSS\'))(.*)\\n?'
     'captures':
       '1':
-        'name': 'punctuation.definition.string.perl'
+        'name': 'punctuation.definition.string.pg'
       '2':
-        'name': 'string.unquoted.heredoc.quote.perl'
+        'name': 'string.unquoted.heredoc.quote.pg'
       '3':
-        'name': 'punctuation.definition.heredoc.perl'
+        'name': 'punctuation.definition.heredoc.pg'
       '4':
         'patterns': [
           {
             'include': '$self'
           }
         ]
-    'contentName': 'text.css.embedded.perl'
+    'contentName': 'text.css.embedded.pg'
     'end': '(^CSS$)'
     'patterns': [
       {
@@ -1033,18 +1033,18 @@
     'begin': '(((<<) *\'JAVASCRIPT\'))(.*)\\n?'
     'captures':
       '1':
-        'name': 'punctuation.definition.string.perl'
+        'name': 'punctuation.definition.string.pg'
       '2':
-        'name': 'string.unquoted.heredoc.quote.perl'
+        'name': 'string.unquoted.heredoc.quote.pg'
       '3':
-        'name': 'punctuation.definition.heredoc.perl'
+        'name': 'punctuation.definition.heredoc.pg'
       '4':
         'patterns': [
           {
             'include': '$self'
           }
         ]
-    'contentName': 'source.js.embedded.perl'
+    'contentName': 'source.js.embedded.pg'
     'end': '(^JAVASCRIPT$)'
     'patterns': [
       {
@@ -1056,18 +1056,18 @@
     'begin': '(((<<) *\'SQL\'))(.*)\\n?'
     'captures':
       '1':
-        'name': 'punctuation.definition.string.perl'
+        'name': 'punctuation.definition.string.pg'
       '2':
-        'name': 'string.unquoted.heredoc.quote.perl'
+        'name': 'string.unquoted.heredoc.quote.pg'
       '3':
-        'name': 'punctuation.definition.heredoc.perl'
+        'name': 'punctuation.definition.heredoc.pg'
       '4':
         'patterns': [
           {
             'include': '$self'
           }
         ]
-    'contentName': 'source.sql.embedded.perl'
+    'contentName': 'source.sql.embedded.pg'
     'end': '(^SQL$)'
     'patterns': [
       {
@@ -1079,18 +1079,18 @@
     'begin': '(((<<) *\'POSTSCRIPT\'))(.*)\\n?'
     'captures':
       '1':
-        'name': 'punctuation.definition.string.perl'
+        'name': 'punctuation.definition.string.pg'
       '2':
-        'name': 'string.unquoted.heredoc.quote.perl'
+        'name': 'string.unquoted.heredoc.quote.pg'
       '3':
-        'name': 'punctuation.definition.heredoc.perl'
+        'name': 'punctuation.definition.heredoc.pg'
       '4':
         'patterns': [
           {
             'include': '$self'
           }
         ]
-    'contentName': 'source.postscript.embedded.perl'
+    'contentName': 'source.postscript.embedded.pg'
     'end': '(^POSTSCRIPT)'
     'patterns': [
       {
@@ -1102,54 +1102,54 @@
     'begin': '(((<<) *\'([^\']*)\'))(.*)\\n?'
     'captures':
       '1':
-        'name': 'punctuation.definition.string.perl'
+        'name': 'punctuation.definition.string.pg'
       '2':
-        'name': 'string.unquoted.heredoc.quote.perl'
+        'name': 'string.unquoted.heredoc.quote.pg'
       '3':
-        'name': 'punctuation.definition.heredoc.perl'
+        'name': 'punctuation.definition.heredoc.pg'
       '5':
         'patterns': [
           {
             'include': '$self'
           }
         ]
-    'contentName': 'string.unquoted.heredoc.quote.perl'
+    'contentName': 'string.unquoted.heredoc.quote.pg'
     'end': '(^\\4$)'
   }
   {
     'begin': '(((<<) *\\\\((?![=\\d\\$\\( ])[^;,\'"`\\s\\)]*)))(.*)\\n?'
     'captures':
       '1':
-        'name': 'punctuation.definition.string.perl'
+        'name': 'punctuation.definition.string.pg'
       '2':
-        'name': 'string.unquoted.heredoc.quote.perl'
+        'name': 'string.unquoted.heredoc.quote.pg'
       '3':
-        'name': 'punctuation.definition.heredoc.perl'
+        'name': 'punctuation.definition.heredoc.pg'
       '5':
         'patterns': [
           {
             'include': '$self'
           }
         ]
-    'contentName': 'string.unquoted.heredoc.quote.perl'
+    'contentName': 'string.unquoted.heredoc.quote.pg'
     'end': '(^\\4$)'
   }
   {
     'begin': '(((<<) *`([^`]*)`))(.*)\\n?'
     'captures':
       '1':
-        'name': 'punctuation.definition.string.perl'
+        'name': 'punctuation.definition.string.pg'
       '2':
-        'name': 'string.unquoted.heredoc.backtick.perl'
+        'name': 'string.unquoted.heredoc.backtick.pg'
       '3':
-        'name': 'punctuation.definition.heredoc.perl'
+        'name': 'punctuation.definition.heredoc.pg'
       '5':
         'patterns': [
           {
             'include': '$self'
           }
         ]
-    'contentName': 'string.unquoted.heredoc.backtick.perl'
+    'contentName': 'string.unquoted.heredoc.backtick.pg'
     'end': '(^\\4$)'
     'patterns': [
       {
@@ -1164,18 +1164,18 @@
     'begin': '(((<<) *HTML\\b))(.*)\\n?'
     'captures':
       '1':
-        'name': 'punctuation.definition.string.perl'
+        'name': 'punctuation.definition.string.pg'
       '2':
-        'name': 'string.unquoted.heredoc.perl'
+        'name': 'string.unquoted.heredoc.pg'
       '3':
-        'name': 'punctuation.definition.heredoc.perl'
+        'name': 'punctuation.definition.heredoc.pg'
       '4':
         'patterns': [
           {
             'include': '$self'
           }
         ]
-    'contentName': 'text.html.embedded.perl'
+    'contentName': 'text.html.embedded.pg'
     'end': '(^HTML$)'
     'patterns': [
       {
@@ -1193,18 +1193,18 @@
     'begin': '(((<<) *XML\\b))(.*)\\n?'
     'captures':
       '1':
-        'name': 'punctuation.definition.string.perl'
+        'name': 'punctuation.definition.string.pg'
       '2':
-        'name': 'string.unquoted.heredoc.perl'
+        'name': 'string.unquoted.heredoc.pg'
       '3':
-        'name': 'punctuation.definition.heredoc.perl'
+        'name': 'punctuation.definition.heredoc.pg'
       '4':
         'patterns': [
           {
             'include': '$self'
           }
         ]
-    'contentName': 'text.xml.embedded.perl'
+    'contentName': 'text.xml.embedded.pg'
     'end': '(^XML$)'
     'patterns': [
       {
@@ -1222,18 +1222,18 @@
     'begin': '(((<<) *JAVASCRIPT\\b))(.*)\\n?'
     'captures':
       '1':
-        'name': 'punctuation.definition.string.perl'
+        'name': 'punctuation.definition.string.pg'
       '2':
-        'name': 'string.unquoted.heredoc.perl'
+        'name': 'string.unquoted.heredoc.pg'
       '3':
-        'name': 'punctuation.definition.heredoc.perl'
+        'name': 'punctuation.definition.heredoc.pg'
       '4':
         'patterns': [
           {
             'include': '$self'
           }
         ]
-    'contentName': 'source.js.embedded.perl'
+    'contentName': 'source.js.embedded.pg'
     'end': '(^JAVASCRIPT$)'
     'patterns': [
       {
@@ -1251,18 +1251,18 @@
     'begin': '(((<<) *SQL\\b))(.*)\\n?'
     'captures':
       '1':
-        'name': 'punctuation.definition.string.perl'
+        'name': 'punctuation.definition.string.pg'
       '2':
-        'name': 'string.unquoted.heredoc.perl'
+        'name': 'string.unquoted.heredoc.pg'
       '3':
-        'name': 'punctuation.definition.heredoc.perl'
+        'name': 'punctuation.definition.heredoc.pg'
       '4':
         'patterns': [
           {
             'include': '$self'
           }
         ]
-    'contentName': 'source.sql.embedded.perl'
+    'contentName': 'source.sql.embedded.pg'
     'end': '(^SQL$)'
     'patterns': [
       {
@@ -1280,18 +1280,18 @@
     'begin': '(((<<) *POSTSCRIPT\\b))(.*)\\n?'
     'captures':
       '1':
-        'name': 'punctuation.definition.string.perl'
+        'name': 'punctuation.definition.string.pg'
       '2':
-        'name': 'string.unquoted.heredoc.perl'
+        'name': 'string.unquoted.heredoc.pg'
       '3':
-        'name': 'punctuation.definition.heredoc.perl'
+        'name': 'punctuation.definition.heredoc.pg'
       '4':
         'patterns': [
           {
             'include': '$self'
           }
         ]
-    'contentName': 'source.postscript.embedded.perl'
+    'contentName': 'source.postscript.embedded.pg'
     'end': '(^POSTSCRIPT)'
     'patterns': [
       {
@@ -1309,18 +1309,18 @@
     'begin': '(((<<) *((?![=\\d\\$\\( ])[^;,\'"`\\s\\)]*)))(.*)\\n?'
     'captures':
       '1':
-        'name': 'punctuation.definition.string.perl'
+        'name': 'punctuation.definition.string.pg'
       '2':
-        'name': 'string.unquoted.heredoc.perl'
+        'name': 'string.unquoted.heredoc.pg'
       '3':
-        'name': 'punctuation.definition.heredoc.perl'
+        'name': 'punctuation.definition.heredoc.pg'
       '5':
         'patterns': [
           {
             'include': '$self'
           }
         ]
-    'contentName': 'string.unquoted.heredoc.perl'
+    'contentName': 'string.unquoted.heredoc.pg'
     'end': '(^\\4$)'
     'patterns': [
       {
@@ -1335,12 +1335,12 @@
     'begin': '\\bqq\\s*([^\\(\\{\\[\\<\\w\\s])'
     'beginCaptures':
       '0':
-        'name': 'punctuation.definition.string.begin.perl'
+        'name': 'punctuation.definition.string.begin.pg'
     'end': '\\1'
     'endCaptures':
       '0':
-        'name': 'punctuation.definition.string.end.perl'
-    'name': 'string.quoted.other.qq.perl'
+        'name': 'punctuation.definition.string.end.pg'
+    'name': 'string.quoted.other.qq.pg'
     'patterns': [
       {
         'include': '#escaped_char'
@@ -1354,12 +1354,12 @@
     'begin': '\\bqx\\s*([^\'\\(\\{\\[\\<\\w\\s])'
     'beginCaptures':
       '0':
-        'name': 'punctuation.definition.string.begin.perl'
+        'name': 'punctuation.definition.string.begin.pg'
     'end': '\\1'
     'endCaptures':
       '0':
-        'name': 'punctuation.definition.string.end.perl'
-    'name': 'string.interpolated.qx.perl'
+        'name': 'punctuation.definition.string.end.pg'
+    'name': 'string.interpolated.qx.pg'
     'patterns': [
       {
         'include': '#escaped_char'
@@ -1373,12 +1373,12 @@
     'begin': '\\bqx\\s*\''
     'beginCaptures':
       '0':
-        'name': 'punctuation.definition.string.begin.perl'
+        'name': 'punctuation.definition.string.begin.pg'
     'end': '\''
     'endCaptures':
       '0':
-        'name': 'punctuation.definition.string.end.perl'
-    'name': 'string.interpolated.qx.single-quote.perl'
+        'name': 'punctuation.definition.string.end.pg'
+    'name': 'string.interpolated.qx.single-quote.pg'
     'patterns': [
       {
         'include': '#escaped_char'
@@ -1389,12 +1389,12 @@
     'begin': '"'
     'beginCaptures':
       '0':
-        'name': 'punctuation.definition.string.begin.perl'
+        'name': 'punctuation.definition.string.begin.pg'
     'end': '"'
     'endCaptures':
       '0':
-        'name': 'punctuation.definition.string.end.perl'
-    'name': 'string.quoted.double.perl'
+        'name': 'punctuation.definition.string.end.pg'
+    'name': 'string.quoted.double.pg'
     'patterns': [
       {
         'include': '#escaped_char'
@@ -1408,27 +1408,27 @@
     'begin': '(?<!->)\\bqw?\\s*([^\\(\\{\\[\\<\\w\\s])'
     'beginCaptures':
       '0':
-        'name': 'punctuation.definition.string.begin.perl'
+        'name': 'punctuation.definition.string.begin.pg'
     'end': '\\1'
     'endCaptures':
       '0':
-        'name': 'punctuation.definition.string.end.perl'
-    'name': 'string.quoted.other.q.perl'
+        'name': 'punctuation.definition.string.end.pg'
+    'name': 'string.quoted.other.q.pg'
   }
   {
     'begin': '\''
     'beginCaptures':
       '0':
-        'name': 'punctuation.definition.string.begin.perl'
+        'name': 'punctuation.definition.string.begin.pg'
     'end': '\''
     'endCaptures':
       '0':
-        'name': 'punctuation.definition.string.end.perl'
-    'name': 'string.quoted.single.perl'
+        'name': 'punctuation.definition.string.end.pg'
+    'name': 'string.quoted.single.pg'
     'patterns': [
       {
         'match': '\\\\[\'\\\\]'
-        'name': 'constant.character.escape.perl'
+        'name': 'constant.character.escape.pg'
       }
     ]
   }
@@ -1436,12 +1436,12 @@
     'begin': '`'
     'beginCaptures':
       '0':
-        'name': 'punctuation.definition.string.begin.perl'
+        'name': 'punctuation.definition.string.begin.pg'
     'end': '`'
     'endCaptures':
       '0':
-        'name': 'punctuation.definition.string.end.perl'
-    'name': 'string.interpolated.perl'
+        'name': 'punctuation.definition.string.end.pg'
+    'name': 'string.interpolated.pg'
     'patterns': [
       {
         'include': '#escaped_char'
@@ -1455,12 +1455,12 @@
     'begin': '(?<!->)\\bqq\\s*\\('
     'beginCaptures':
       '0':
-        'name': 'punctuation.definition.string.begin.perl'
+        'name': 'punctuation.definition.string.begin.pg'
     'end': '\\)'
     'endCaptures':
       '0':
-        'name': 'punctuation.definition.string.end.perl'
-    'name': 'string.quoted.other.qq-paren.perl'
+        'name': 'punctuation.definition.string.end.pg'
+    'name': 'string.quoted.other.qq-paren.pg'
     'patterns': [
       {
         'include': '#escaped_char'
@@ -1477,12 +1477,12 @@
     'begin': '\\bqq\\s*\\{'
     'beginCaptures':
       '0':
-        'name': 'punctuation.definition.string.begin.perl'
+        'name': 'punctuation.definition.string.begin.pg'
     'end': '\\}'
     'endCaptures':
       '0':
-        'name': 'punctuation.definition.string.end.perl'
-    'name': 'string.quoted.other.qq-brace.perl'
+        'name': 'punctuation.definition.string.end.pg'
+    'name': 'string.quoted.other.qq-brace.pg'
     'patterns': [
       {
         'include': '#escaped_char'
@@ -1499,12 +1499,12 @@
     'begin': '\\bqq\\s*\\['
     'beginCaptures':
       '0':
-        'name': 'punctuation.definition.string.begin.perl'
+        'name': 'punctuation.definition.string.begin.pg'
     'end': '\\]'
     'endCaptures':
       '0':
-        'name': 'punctuation.definition.string.end.perl'
-    'name': 'string.quoted.other.qq-bracket.perl'
+        'name': 'punctuation.definition.string.end.pg'
+    'name': 'string.quoted.other.qq-bracket.pg'
     'patterns': [
       {
         'include': '#escaped_char'
@@ -1521,12 +1521,12 @@
     'begin': '\\bqq\\s*\\<'
     'beginCaptures':
       '0':
-        'name': 'punctuation.definition.string.begin.perl'
+        'name': 'punctuation.definition.string.begin.pg'
     'end': '\\>'
     'endCaptures':
       '0':
-        'name': 'punctuation.definition.string.end.perl'
-    'name': 'string.quoted.other.qq-ltgt.perl'
+        'name': 'punctuation.definition.string.end.pg'
+    'name': 'string.quoted.other.qq-ltgt.pg'
     'patterns': [
       {
         'include': '#escaped_char'
@@ -1543,12 +1543,12 @@
     'begin': '(?<!->)\\bqx\\s*\\('
     'beginCaptures':
       '0':
-        'name': 'punctuation.definition.string.begin.perl'
+        'name': 'punctuation.definition.string.begin.pg'
     'end': '\\)'
     'endCaptures':
       '0':
-        'name': 'punctuation.definition.string.end.perl'
-    'name': 'string.interpolated.qx-paren.perl'
+        'name': 'punctuation.definition.string.end.pg'
+    'name': 'string.interpolated.qx-paren.pg'
     'patterns': [
       {
         'include': '#escaped_char'
@@ -1565,12 +1565,12 @@
     'begin': '\\bqx\\s*\\{'
     'beginCaptures':
       '0':
-        'name': 'punctuation.definition.string.begin.perl'
+        'name': 'punctuation.definition.string.begin.pg'
     'end': '\\}'
     'endCaptures':
       '0':
-        'name': 'punctuation.definition.string.end.perl'
-    'name': 'string.interpolated.qx-brace.perl'
+        'name': 'punctuation.definition.string.end.pg'
+    'name': 'string.interpolated.qx-brace.pg'
     'patterns': [
       {
         'include': '#escaped_char'
@@ -1587,12 +1587,12 @@
     'begin': '\\bqx\\s*\\['
     'beginCaptures':
       '0':
-        'name': 'punctuation.definition.string.begin.perl'
+        'name': 'punctuation.definition.string.begin.pg'
     'end': '\\]'
     'endCaptures':
       '0':
-        'name': 'punctuation.definition.string.end.perl'
-    'name': 'string.interpolated.qx-bracket.perl'
+        'name': 'punctuation.definition.string.end.pg'
+    'name': 'string.interpolated.qx-bracket.pg'
     'patterns': [
       {
         'include': '#escaped_char'
@@ -1609,12 +1609,12 @@
     'begin': '\\bqx\\s*\\<'
     'beginCaptures':
       '0':
-        'name': 'punctuation.definition.string.begin.perl'
+        'name': 'punctuation.definition.string.begin.pg'
     'end': '\\>'
     'endCaptures':
       '0':
-        'name': 'punctuation.definition.string.end.perl'
-    'name': 'string.interpolated.qx-ltgt.perl'
+        'name': 'punctuation.definition.string.end.pg'
+    'name': 'string.interpolated.qx-ltgt.pg'
     'patterns': [
       {
         'include': '#escaped_char'
@@ -1631,12 +1631,12 @@
     'begin': '(?<!->)\\bqw?\\s*\\('
     'beginCaptures':
       '0':
-        'name': 'punctuation.definition.string.begin.perl'
+        'name': 'punctuation.definition.string.begin.pg'
     'end': '\\)'
     'endCaptures':
       '0':
-        'name': 'punctuation.definition.string.end.perl'
-    'name': 'string.quoted.other.q-paren.perl'
+        'name': 'punctuation.definition.string.end.pg'
+    'name': 'string.quoted.other.q-paren.pg'
     'patterns': [
       {
         'include': '#nested_parens'
@@ -1647,12 +1647,12 @@
     'begin': '\\bqw?\\s*\\{'
     'beginCaptures':
       '0':
-        'name': 'punctuation.definition.string.begin.perl'
+        'name': 'punctuation.definition.string.begin.pg'
     'end': '\\}'
     'endCaptures':
       '0':
-        'name': 'punctuation.definition.string.end.perl'
-    'name': 'string.quoted.other.q-brace.perl'
+        'name': 'punctuation.definition.string.end.pg'
+    'name': 'string.quoted.other.q-brace.pg'
     'patterns': [
       {
         'include': '#nested_braces'
@@ -1663,12 +1663,12 @@
     'begin': '\\bqw?\\s*\\['
     'beginCaptures':
       '0':
-        'name': 'punctuation.definition.string.begin.perl'
+        'name': 'punctuation.definition.string.begin.pg'
     'end': '\\]'
     'endCaptures':
       '0':
-        'name': 'punctuation.definition.string.end.perl'
-    'name': 'string.quoted.other.q-bracket.perl'
+        'name': 'punctuation.definition.string.end.pg'
+    'name': 'string.quoted.other.q-bracket.pg'
     'patterns': [
       {
         'include': '#nested_brackets'
@@ -1679,12 +1679,12 @@
     'begin': '\\bqw?\\s*\\<'
     'beginCaptures':
       '0':
-        'name': 'punctuation.definition.string.begin.perl'
+        'name': 'punctuation.definition.string.begin.pg'
     'end': '\\>'
     'endCaptures':
       '0':
-        'name': 'punctuation.definition.string.end.perl'
-    'name': 'string.quoted.other.q-ltgt.perl'
+        'name': 'punctuation.definition.string.end.pg'
+    'name': 'string.quoted.other.q-ltgt.pg'
     'patterns': [
       {
         'include': '#nested_ltgt'
@@ -1695,22 +1695,22 @@
     'begin': '^__\\w+__'
     'beginCaptures':
       '0':
-        'name': 'punctuation.definition.string.begin.perl'
+        'name': 'punctuation.definition.string.begin.pg'
     'end': '$'
     'endCaptures':
       '0':
-        'name': 'punctuation.definition.string.end.perl'
-    'name': 'string.unquoted.program-block.perl'
+        'name': 'punctuation.definition.string.end.pg'
+    'name': 'string.unquoted.program-block.pg'
   }
   {
     'begin': '\\b(format)\\s+(\\w+)\\s*='
     'beginCaptures':
       '1':
-        'name': 'support.function.perl'
+        'name': 'support.function.pg'
       '2':
-        'name': 'entity.name.function.format.perl'
+        'name': 'entity.name.function.format.pg'
     'end': '^\\.\\s*$'
-    'name': 'meta.format.perl'
+    'name': 'meta.format.pg'
     'patterns': [
       {
         'include': '#line_comment'
@@ -1724,13 +1724,13 @@
     'match': '\\b(x)\\s*(\\d+)\\b'
     'captures':
       '1':
-        'name': 'support.function.perl'
+        'name': 'support.function.pg'
       '2':
-        'name': 'entity.name.function.perl'
+        'name': 'entity.name.function.pg'
   }
   {
     'match': '\\b(ARGV|DATA|ENV|SIG|STDERR|STDIN|STDOUT|atan2|bind|binmode|bless|caller|chdir|chmod|chomp|chop|chown|chr|chroot|close|closedir|cmp|connect|cos|crypt|dbmclose|dbmopen|defined|delete|dump|each|endgrent|endhostent|endnetent|endprotoent|endpwent|endservent|eof|eq|eval|exec|exists|exp|fcntl|fileno|flock|fork|formline|ge|getc|getgrent|getgrgid|getgrnam|gethostbyaddr|gethostbyname|gethostent|getlogin|getnetbyaddr|getnetbyname|getnetent|getpeername|getpgrp|getppid|getpriority|getprotobyname|getprotobynumber|getprotoent|getpwent|getpwnam|getpwuid|getservbyname|getservbyport|getservent|getsockname|getsockopt|glob|gmtime|grep|gt|hex|import|index|int|ioctl|join|keys|kill|lc|lcfirst|le|length|link|listen|local|localtime|log|lstat|lt|m|map|mkdir|msgctl|msgget|msgrcv|msgsnd|ne|no|oct|open|opendir|ord|pack|pipe|pop|pos|print|printf|push|quotemeta|rand|read|readdir|readlink|recv|ref|rename|reset|reverse|rewinddir|rindex|rmdir|s|scalar|seek|seekdir|semctl|semget|semop|send|setgrent|sethostent|setnetent|setpgrp|setpriority|setprotoent|setpwent|setservent|setsockopt|shift|shmctl|shmget|shmread|shmwrite|shutdown|sin|sleep|socket|socketpair|sort|splice|split|sprintf|sqrt|srand|stat|study|substr|symlink|syscall|sysopen|sysread|system|syswrite|tell|telldir|tie|tied|time|times|tr|truncate|uc|ucfirst|umask|undef|unlink|unpack|unshift|untie|utime|values|vec|waitpid|wantarray|warn|write|y)\\b'
-    'name': 'support.function.perl'
+    'name': 'support.function.pg'
   }
 ]
 'repository':
@@ -1738,39 +1738,39 @@
     'patterns': [
       {
         'match': '\\\\\\d+'
-        'name': 'constant.character.escape.perl'
+        'name': 'constant.character.escape.pg'
       }
       {
         'match': '\\\\c[^\\s\\\\]'
-        'name': 'constant.character.escape.perl'
+        'name': 'constant.character.escape.pg'
       }
       {
         'match': '\\\\g(?:\\{(?:\\w*|-\\d+)\\}|\\d+)'
-        'name': 'constant.character.escape.perl'
+        'name': 'constant.character.escape.pg'
       }
       {
         'match': '\\\\k(?:\\{\\w*\\}|<\\w*>|\'\\w*\')'
-        'name': 'constant.character.escape.perl'
+        'name': 'constant.character.escape.pg'
       }
       {
         'match': '\\\\N\\{[^\\}]*\\}'
-        'name': 'constant.character.escape.perl'
+        'name': 'constant.character.escape.pg'
       }
       {
         'match': '\\\\o\\{\\d*\\}'
-        'name': 'constant.character.escape.perl'
+        'name': 'constant.character.escape.pg'
       }
       {
         'match': '\\\\(?:p|P)(?:\\{\\w*\\}|P)'
-        'name': 'constant.character.escape.perl'
+        'name': 'constant.character.escape.pg'
       }
       {
         'match': '\\\\x(?:[0-9a-zA-Z]{2}|\\{\\w*\\})?'
-        'name': 'constant.character.escape.perl'
+        'name': 'constant.character.escape.pg'
       }
       {
         'match': '\\\\.'
-        'name': 'constant.character.escape.perl'
+        'name': 'constant.character.escape.pg'
       }
     ]
   'line_comment':
@@ -1779,16 +1779,16 @@
         'begin': '(^[ \\t]+)?(?=#)'
         'beginCaptures':
           '1':
-            'name': 'punctuation.whitespace.comment.leading.perl'
+            'name': 'punctuation.whitespace.comment.leading.pg'
         'end': '(?!\\G)'
         'patterns': [
           {
             'begin': '#'
             'beginCaptures':
               '0':
-                'name': 'punctuation.definition.comment.perl'
+                'name': 'punctuation.definition.comment.pg'
             'end': '\\n'
-            'name': 'comment.line.number-sign.perl'
+            'name': 'comment.line.number-sign.pg'
           }
         ]
       }
@@ -1797,7 +1797,7 @@
     'begin': '\\{'
     'captures':
       '1':
-        'name': 'punctuation.section.scope.perl'
+        'name': 'punctuation.section.scope.pg'
     'end': '\\}'
     'patterns': [
       {
@@ -1811,7 +1811,7 @@
     'begin': '\\{'
     'captures':
       '1':
-        'name': 'punctuation.section.scope.perl'
+        'name': 'punctuation.section.scope.pg'
     'end': '\\}'
     'patterns': [
       {
@@ -1828,7 +1828,7 @@
     'begin': '\\['
     'captures':
       '1':
-        'name': 'punctuation.section.scope.perl'
+        'name': 'punctuation.section.scope.pg'
     'end': '\\]'
     'patterns': [
       {
@@ -1842,7 +1842,7 @@
     'begin': '\\['
     'captures':
       '1':
-        'name': 'punctuation.section.scope.perl'
+        'name': 'punctuation.section.scope.pg'
     'end': '\\]'
     'patterns': [
       {
@@ -1859,7 +1859,7 @@
     'begin': '<'
     'captures':
       '1':
-        'name': 'punctuation.section.scope.perl'
+        'name': 'punctuation.section.scope.pg'
     'end': '>'
     'patterns': [
       {
@@ -1870,7 +1870,7 @@
     'begin': '<'
     'captures':
       '1':
-        'name': 'punctuation.section.scope.perl'
+        'name': 'punctuation.section.scope.pg'
     'end': '>'
     'patterns': [
       {
@@ -1884,7 +1884,7 @@
     'begin': '\\('
     'captures':
       '1':
-        'name': 'punctuation.section.scope.perl'
+        'name': 'punctuation.section.scope.pg'
     'end': '\\)'
     'patterns': [
       {
@@ -1898,13 +1898,13 @@
     'begin': '\\('
     'captures':
       '1':
-        'name': 'punctuation.section.scope.perl'
+        'name': 'punctuation.section.scope.pg'
     'end': '\\)'
     'patterns': [
       {
         'comment': 'This is to prevent thinks like qr/foo$/ to treat $/ as a variable'
         'match': '\\$(?=[^\\s\\w\\\'\\{\\[\\(\\<])'
-        'name': 'keyword.control.anchor.perl'
+        'name': 'keyword.control.anchor.pg'
       }
       {
         'include': '#escaped_char'
@@ -1921,80 +1921,80 @@
       {
         'captures':
           '1':
-            'name': 'punctuation.definition.variable.perl'
+            'name': 'punctuation.definition.variable.pg'
         'match': '(\\$)&(?![A-Za-z0-9_])'
-        'name': 'variable.other.regexp.match.perl'
+        'name': 'variable.other.regexp.match.pg'
       }
       {
         'captures':
           '1':
-            'name': 'punctuation.definition.variable.perl'
+            'name': 'punctuation.definition.variable.pg'
         'match': '(\\$)`(?![A-Za-z0-9_])'
-        'name': 'variable.other.regexp.pre-match.perl'
+        'name': 'variable.other.regexp.pre-match.pg'
       }
       {
         'captures':
           '1':
-            'name': 'punctuation.definition.variable.perl'
+            'name': 'punctuation.definition.variable.pg'
         'match': '(\\$)\'(?![A-Za-z0-9_])'
-        'name': 'variable.other.regexp.post-match.perl'
+        'name': 'variable.other.regexp.post-match.pg'
       }
       {
         'captures':
           '1':
-            'name': 'punctuation.definition.variable.perl'
+            'name': 'punctuation.definition.variable.pg'
         'match': '(\\$)\\+(?![A-Za-z0-9_])'
-        'name': 'variable.other.regexp.last-paren-match.perl'
+        'name': 'variable.other.regexp.last-paren-match.pg'
       }
       {
         'captures':
           '1':
-            'name': 'punctuation.definition.variable.perl'
+            'name': 'punctuation.definition.variable.pg'
         'match': '(\\$)"(?![A-Za-z0-9_])'
-        'name': 'variable.other.readwrite.list-separator.perl'
+        'name': 'variable.other.readwrite.list-separator.pg'
       }
       {
         'captures':
           '1':
-            'name': 'punctuation.definition.variable.perl'
+            'name': 'punctuation.definition.variable.pg'
         'match': '(\\$)0(?![A-Za-z0-9_])'
-        'name': 'variable.other.predefined.program-name.perl'
+        'name': 'variable.other.predefined.program-name.pg'
       }
       {
         'captures':
           '1':
-            'name': 'punctuation.definition.variable.perl'
+            'name': 'punctuation.definition.variable.pg'
         'match': '(\\$)[_ab\\*\\.\\/\\|,\\\\;#%=\\-~^:?!\\$<>\\(\\)\\[\\]@](?![A-Za-z0-9_])'
-        'name': 'variable.other.predefined.perl'
+        'name': 'variable.other.predefined.pg'
       }
       {
         'captures':
           '1':
-            'name': 'punctuation.definition.variable.perl'
+            'name': 'punctuation.definition.variable.pg'
         'match': '(\\$)[0-9]+(?![A-Za-z0-9_])'
-        'name': 'variable.other.subpattern.perl'
+        'name': 'variable.other.subpattern.pg'
       }
       {
         'captures':
           '1':
-            'name': 'punctuation.definition.variable.perl'
+            'name': 'punctuation.definition.variable.pg'
         'match': '([\\$\\@\\%](#)?)([a-zA-Zx7f-xff\\$]|::)([a-zA-Z0-9_x7f-xff\\$]|::)*\\b'
-        'name': 'variable.other.readwrite.global.perl'
+        'name': 'variable.other.readwrite.global.pg'
       }
       {
         'captures':
           '1':
-            'name': 'punctuation.definition.variable.perl'
+            'name': 'punctuation.definition.variable.pg'
           '2':
-            'name': 'punctuation.definition.variable.perl'
+            'name': 'punctuation.definition.variable.pg'
         'match': '(\\$\\{)(?:[a-zA-Zx7f-xff\\$]|::)(?:[a-zA-Z0-9_x7f-xff\\$]|::)*(\\})'
-        'name': 'variable.other.readwrite.global.perl'
+        'name': 'variable.other.readwrite.global.pg'
       }
       {
         'captures':
           '1':
-            'name': 'punctuation.definition.variable.perl'
+            'name': 'punctuation.definition.variable.pg'
         'match': '([\\$\\@\\%](#)?)[0-9_]\\b'
-        'name': 'variable.other.readwrite.global.special.perl'
+        'name': 'variable.other.readwrite.global.special.pg'
       }
     ]
