@@ -1,22 +1,10 @@
-'scopeName': 'source.pg'
+'scopeName': 'source.def'
 'fileTypes': [
-  'pg'
-  'PG'
+  'def'
 ]
-'firstLineMatch': '^DOCUMENT();'
-'name': 'PG'
+'firstLineMatch': '^openDate'
+'name': 'PG-Def'
 'patterns': [
-  {
-    'include': '#line_comment'
-  }
-  {
-    'begin': '^='
-    'captures':
-      '0':
-        'name': 'punctuation.definition.comment.pg'
-    'end': '^=cut'
-    'name': 'comment.block.documentation.pg'
-  }
   {
     'include': '#variable'
   }
