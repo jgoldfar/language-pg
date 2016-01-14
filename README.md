@@ -1,9 +1,8 @@
-# Perl language support in Atom [![Build Status](https://travis-ci.org/atom/language-perl.svg?branch=master)](https://travis-ci.org/atom/language-perl)
+# PG language support in Atom 
 
-Adds syntax highlighting and snippets to Perl files in Atom.
+Adds syntax highlighting for WebWork's "PG" flavor of Perl.
 
-Originally [converted](http://atom.io/docs/latest/converting-a-text-mate-bundle)
-from the [Perl TextMate bundle](https://github.com/textmate/perl.tmbundle).
+Forked from the [language-perl](https://github.com/atom/language-perl) package.
 
 Contributions are greatly appreciated. Please fork this repository and open a
 pull request to add snippets, make grammar tweaks, etc.
