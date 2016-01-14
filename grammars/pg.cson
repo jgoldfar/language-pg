@@ -1,15 +1,9 @@
-'scopeName': 'source.perl'
-'name': 'Perl'
+'scopeName': 'source.pg'
+'name': 'PG'
 'fileTypes': [
-  'pl'
-  'PL'
-  'pm'
-  'pod'
-  'psgi'
-  't'
-  'vcl'
+  'pg'
+  'PG'
 ]
-'firstLineMatch': '^#!.*\\bperl\\b'
 'patterns': [
   {
     'include': '#line_comment'
