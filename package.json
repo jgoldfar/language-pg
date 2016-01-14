@@ -1,19 +1,19 @@
 {
-  "name": "language-perl",
-  "version": "0.32.0",
-  "description": "Perl language support in Atom",
+  "name": "language-pg",
+  "version": "0.1.0",
+  "description": "PG language support in Atom",
   "engines": {
     "atom": "*",
     "node": "*"
   },
-  "homepage": "http://atom.github.io/language-perl",
+  "homepage": "https://github.com/jgoldfar/language-pg",
   "repository": {
     "type": "git",
-    "url": "https://github.com/atom/language-perl.git"
+    "url": "https://github.com/jgoldfar/language-pg.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/atom/language-perl/issues"
+    "url": "https://github.com/jgoldfar/language-pg/issues"
   },
   "devDependencies": {
     "coffeelint": "^1.10.1"
